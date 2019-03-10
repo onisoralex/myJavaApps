@@ -1,0 +1,44 @@
+How to set character type for console to utf-8 to see also Umlaute?
+
+
+combine FileReader with FilePathSserach and with TextFileToStringArray?
+
+Screen shift:
+- the method shoud be able to go to specific coordinates like "screen 2; x=200; y=500" (done) or "screen 2; x=20%; y=50%"
+- work with threads for the main method
+-> one thread waits for the inputand starts the other thread
+-> the other thread executes the switch and calcultions
+-> thread one can also save when the user presses multiple times in order to execute every single press
+--> the listening thread takes the new commands and waits for the first executing thread to finish,
+    then starts aother one, insteadof just ignoring the new input
+--> the listening thread could wait fore more input characters and loo if the dedicated key is one of them
+    it should make a check every some milliseconds
+
+Important TODO: Sticky Corners are deactivated under Registry: HKEY_CURRENT_USER\ControlPanel\Desktop\ -> MouseCornerClipLength
+-------------->this is only a temporary workaround to be able to go withthe mouse over thecorners.
+---------------proram has to be able to ignore corners: move to center, switch, move to position
+
+
+!!!Bindings Object
+1. take the bindings text file, read every line and copy them to a temporary .java-File. 
+2. compile the .java-File and read the variables from the file as part of the already 
+   Not just a read-from-file method, but more like the variables in the compiled file 
+   are part of the running JAVA VM. If a variable is not specified in the File, there 
+   should be a default value for the variable specified in the place where it is used, or another bindings 
+   file should be used with the default values and the defaults will only be overriden
+
+insert a "bindings" file, from which the settings will be read when the class initializes and localy save the settings.
+instead of always readinng from the file, the program can read from the varibles directy instead.
+read file into an object and access the variables from the object at initialisation.
+
+the file will be converted into a java class file, initialized and by that
+the variables will be set in the object if they exist in the object. Or the File that is converted
+will be the object itself or part of the object.
+
+
+Weighed Random:
+- balanced Random Method 
+  every Number is almost equaly often. generate a random number with a higher
+  probability for the ones that have been cast lest often.
+- percented peak random
+  like "left" and "right", but with choosable peak positions by percentage

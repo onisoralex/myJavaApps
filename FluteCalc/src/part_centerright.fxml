@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<GridPane fx:controller="FluteCalc.FXMLController"
+          xmlns:fx="http://javafx.com/fxml"
+          hgap="5" vgap="5" maxWidth="600" >
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10" />
+  </padding>
+  <!--gridLinesVisible>true</gridLinesVisible-->
+
+  <HBox GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="5" >
+    <Label text="Geo.Correction: " />
+    <TextField fx:id="geocorrection" />
+  </HBox>
+  <HBox GridPane.rowIndex="0" GridPane.columnIndex="5" GridPane.columnSpan="5"
+        alignment="CENTER_RIGHT" >
+    <Label text="Cutoff Ratio Deviation (%): " />
+    <TextField fx:id="cutoffratiodeviation" />
+  </HBox>
+
+  <Label text="Note Name" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="0"
+         minHeight="75" />
+  <Label text="Chim. Height" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="1" />
+  <Label text="Nom. Lengths" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="2" />
+  <Label text="Hole Space" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="3" />
+  <Label text="Local Cutoff (Hz)" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="4" />
+  <Label text="Open Hole Correction" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="5" />
+  <Label text="Closed Hole Correction" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="6" />
+  <Label text="New Hole Position" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="7" />
+  <Label text="Cutoff Ratio" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="8" />
+  <Label text="Ratio Deviation" wrapText="true"
+         GridPane.rowIndex="1" GridPane.columnIndex="9" />
+
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="0" fx:id="notename0" />
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="chimheight0" />
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="2" fx:id="nomlengths0" />
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="3" fx:id="holespace0" />
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="4" fx:id="localcutoff0" />
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="5" fx:id="openholecorr0" />
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="6" fx:id="closedholecorr0" />
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="7" fx:id="newholepos0" />
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="8" fx:id="cutoffratio0" />
+  <TextField GridPane.rowIndex="2" GridPane.columnIndex="9" fx:id="ratiodeviation0" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="0" fx:id="notename1" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="1" fx:id="chimheight1" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="2" fx:id="nomlengths1" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="3" fx:id="holespace1" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="4" fx:id="localcutoff1" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="5" fx:id="openholecorr1" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="6" fx:id="closedholecorr1" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="7" fx:id="newholepos1" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="8" fx:id="cutoffratio1" />
+  <TextField GridPane.rowIndex="3" GridPane.columnIndex="9" fx:id="ratiodeviation1" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="0" fx:id="notename2" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="1" fx:id="chimheight2" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="2" fx:id="nomlengths2" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="3" fx:id="holespace2" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="4" fx:id="localcutoff2" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="5" fx:id="openholecorr2" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="6" fx:id="closedholecorr2" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="7" fx:id="newholepos2" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="8" fx:id="cutoffratio2" />
+  <TextField GridPane.rowIndex="4" GridPane.columnIndex="9" fx:id="ratiodeviation2" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="0" fx:id="notename3" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="1" fx:id="chimheight3" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="2" fx:id="nomlengths3" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="3" fx:id="holespace3" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="4" fx:id="localcutoff3" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="5" fx:id="openholecorr3" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="6" fx:id="closedholecorr3" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="7" fx:id="newholepos3" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="8" fx:id="cutoffratio3" />
+  <TextField GridPane.rowIndex="5" GridPane.columnIndex="9" fx:id="ratiodeviation3" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="0" fx:id="notename4" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="1" fx:id="chimheight4" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="2" fx:id="nomlengths4" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="3" fx:id="holespace4" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="4" fx:id="localcutoff4" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="5" fx:id="openholecorr4" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="6" fx:id="closedholecorr4" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="7" fx:id="newholepos4" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="8" fx:id="cutoffratio4" />
+  <TextField GridPane.rowIndex="6" GridPane.columnIndex="9" fx:id="ratiodeviation4" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="0" fx:id="notename5" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="1" fx:id="chimheight5" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="2" fx:id="nomlengths5" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="3" fx:id="holespace5" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="4" fx:id="localcutoff5" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="5" fx:id="openholecorr5" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="6" fx:id="closedholecorr5" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="7" fx:id="newholepos5" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="8" fx:id="cutoffratio5" />
+  <TextField GridPane.rowIndex="7" GridPane.columnIndex="9" fx:id="ratiodeviation5" />
+  <TextField GridPane.rowIndex="8" GridPane.columnIndex="0" fx:id="notename6" />
+  <TextField GridPane.rowIndex="8" GridPane.columnIndex="2" fx:id="nomlengths6" />
+  <TextField GridPane.rowIndex="8" GridPane.columnIndex="5" fx:id="openholecorr6" />
+  <TextField GridPane.rowIndex="8" GridPane.columnIndex="6" fx:id="closedholecorr6" />
+  <TextField GridPane.rowIndex="8" GridPane.columnIndex="7" fx:id="newholepos6" />
+</GridPane>

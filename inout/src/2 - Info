@@ -1,0 +1,36 @@
+max Window bounds does not output the screen size
+    System.out.print("MAX W: " + gr.getMaximumWindowBounds().width + ", ");
+    System.out.println("MAX H: " + gr.getMaximumWindowBounds().height + ";");
+but this does for both screens
+    GraphicsDevice[] gs = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices();
+    for (int i = 0; i < gs.length; i++) {
+        System.out.println(gs[i].getDisplayMode().getWidth() + " " + gs[i].getDisplayMode().getHeight());
+    }
+
+private int[] data = new int[3];
+
+in constructor:
+    data = new int[]{0, 0, 0};
+
+
+paths for files can be used with "\" or "\\" when read out of a text file
+inside of java it aways has to be "\\"
+it doesn't mater outside of java
+
+
+        /* //Not necessary, because regex searches for a letter before ":"
+         if (str.startsWith(":\\")) {
+         //            System.out.println("A drive with no name does not exist!");
+         System.out.println("First possibility is a drive without a name!");
+         //System.out.println("File name must not have folowing symbols: /\\:*?\"<>|");
+         }
+         */
+
+String[] file = {"\nC\n:\n\\\nUsers\\Al\nex\\D\nesktop\\\n", "test", ".t\nxt"};
+        String str = new String();
+        for (int i = 0; i < file.length; i++) {
+            str += file[i];
+        }
+        System.out.println(str);
+        
+

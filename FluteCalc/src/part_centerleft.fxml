@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<GridPane  fx:controller="FluteCalc.FXMLController"
+           xmlns:fx="http://javafx.com/fxml"
+           hgap="5" vgap="5" >
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10" />
+  </padding>
+  <!--gridLinesVisible>true</gridLinesVisible-->
+
+  <HBox GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.columnSpan="2"
+        alignment="CENTER" >
+    <Text text="Adjust Here " />
+  </HBox>
+  <HBox  GridPane.rowIndex="1" GridPane.columnIndex="1"
+         alignment="CENTER" >
+    <Label text="Freq. " />
+  </HBox>
+  <HBox  GridPane.rowIndex="1" GridPane.columnIndex="2"
+         alignment="CENTER" >
+    <Label text="Hole Dia. " />
+  </HBox>
+  <HBox GridPane.rowIndex="1" GridPane.columnIndex="3" GridPane.columnSpan="2"
+        alignment="CENTER_RIGHT" >
+    <Button text="Cal. Freq."
+            fx:id="calcfreq1"
+            minWidth="115" />
+  </HBox>
+  <HBox GridPane.rowIndex="2" GridPane.columnIndex="4" GridPane.rowSpan="6"
+        alignment="CENTER_RIGHT" >
+    <Button text="Cal. Freq."
+            fx:id="calcfreq2"
+            minHeight="160" />
+  </HBox>
+  <HBox GridPane.rowIndex="8" GridPane.columnIndex="2" GridPane.columnSpan="3"
+        alignment="CENTER" >
+    <CheckBox fx:id="autorecalc"/>
+    <Label text=" Auto Recalc " />
+  </HBox>
+
+  <Label text="6 "
+         GridPane.rowIndex="2" GridPane.columnIndex="0" />
+  <TextField fx:id="frequency6"
+             GridPane.rowIndex="2" GridPane.columnIndex="1"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="diameter6"
+             GridPane.rowIndex="2" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <HBox GridPane.rowIndex="2" GridPane.columnIndex="3"
+        alignment="CENTER" >
+    <Button text="u"
+            onAction="#freqUpButton6"
+            maxWidth="25" />
+    <Button text="d"
+            onAction="#freqDownButton6"
+            maxWidth="25" />
+  </HBox>
+  <Label text="5 "
+         GridPane.rowIndex="3" GridPane.columnIndex="0" />
+  <TextField fx:id="frequency5"
+             GridPane.rowIndex="3" GridPane.columnIndex="1"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="diameter5"
+             GridPane.rowIndex="3" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <HBox GridPane.rowIndex="3" GridPane.columnIndex="3"
+        alignment="CENTER" >
+    <Button text="u"
+            onAction="#freqUpButton5"
+            maxWidth="25" />
+    <Button text="d"
+            onAction="#freqDownButton5"
+            maxWidth="25" />
+  </HBox>
+  <Label text="4 "
+         GridPane.rowIndex="4" GridPane.columnIndex="0" />
+  <TextField fx:id="frequency4"
+             GridPane.rowIndex="4" GridPane.columnIndex="1"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="diameter4"
+             GridPane.rowIndex="4" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <HBox GridPane.rowIndex="4" GridPane.columnIndex="3"
+        alignment="CENTER" >
+    <Button text="u"
+            onAction="#freqUpButton4"
+            maxWidth="25" />
+    <Button text="d"
+            onAction="#freqDownButton4"
+            maxWidth="25" />
+  </HBox>
+  <Label text="3 "
+         GridPane.rowIndex="5" GridPane.columnIndex="0" />
+  <TextField fx:id="frequency3"
+             GridPane.rowIndex="5" GridPane.columnIndex="1"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="diameter3"
+             GridPane.rowIndex="5" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <HBox GridPane.rowIndex="5" GridPane.columnIndex="3"
+        alignment="CENTER" >
+    <Button text="u"
+            onAction="#freqUpButton3"
+            maxWidth="25" />
+    <Button text="d"
+            onAction="#freqDownButton3"
+            maxWidth="25" />
+  </HBox>
+  <Label text="2 "
+         GridPane.rowIndex="6" GridPane.columnIndex="0" />
+  <TextField fx:id="frequency2"
+             GridPane.rowIndex="6" GridPane.columnIndex="1"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="diameter2"
+             GridPane.rowIndex="6" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <HBox GridPane.rowIndex="6" GridPane.columnIndex="3"
+        alignment="CENTER" >
+    <Button text="u"
+            onAction="#freqUpButton2"
+            maxWidth="25" />
+    <Button text="d"
+            onAction="#freqDownButton2"
+            maxWidth="25" />
+  </HBox>
+  <Label text="1 "
+         GridPane.rowIndex="7" GridPane.columnIndex="0" />
+  <TextField fx:id="frequency1"
+             GridPane.rowIndex="7" GridPane.columnIndex="1"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="diameter1"
+             GridPane.rowIndex="7" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <HBox GridPane.rowIndex="7" GridPane.columnIndex="3"
+        alignment="CENTER" >
+    <Button text="u"
+            onAction="#freqUpButton1"
+            maxWidth="25" />
+    <Button text="d"
+            onAction="#freqDownButton1"
+            maxWidth="25" />
+  </HBox>
+  <Label text="B "
+         GridPane.rowIndex="8" GridPane.columnIndex="0" />
+  <TextField GridPane.rowIndex="8" GridPane.columnIndex="1"
+             maxWidth="50" maxHeight="50" />
+</GridPane>

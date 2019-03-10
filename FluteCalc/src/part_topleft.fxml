@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<GridPane  fx:controller="FluteCalc.FXMLController"
+           xmlns:fx="http://javafx.com/fxml"
+           hgap="5" vgap="5" >
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10" />
+  </padding>
+  <!--gridLinesVisible>true</gridLinesVisible-->
+
+  <Label text="Bore Diameter: "
+         GridPane.rowIndex="0" GridPane.columnIndex="0" />
+  <TextField fx:id="borediameter"
+             maxWidth="50" maxHeight="50"
+             GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+  <Label text="Emb.Hole Width: "
+         GridPane.rowIndex="0" GridPane.columnIndex="2" />
+  <TextField fx:id="embouchurewidth"
+             GridPane.rowIndex="0" GridPane.columnIndex="3"
+             maxWidth="50" maxHeight="50" />
+
+  <Label text="Wall Thickness: "
+         GridPane.rowIndex="1" GridPane.columnIndex="0" />
+  <TextField fx:id="wallthickness"
+             GridPane.rowIndex="1" GridPane.columnIndex="1"
+             maxWidth="50" maxHeight="50" />
+
+  <Label text="Hole Len (Square): "
+         GridPane.rowIndex="1" GridPane.columnIndex="2" />
+  <TextField fx:id="embholelength"
+             GridPane.rowIndex="1" GridPane.columnIndex="3"
+             maxWidth="50" maxHeight="50" />
+
+  <Label text="Desc: "
+         GridPane.rowIndex="2" GridPane.columnIndex="0" />
+  <TextField fx:id="description"
+             GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="3"
+             maxWidth="100" maxHeight="10" />
+</GridPane>

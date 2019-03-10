@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<GridPane  fx:controller="FluteCalc.FXMLController"
+           xmlns:fx="http://javafx.com/fxml"
+           hgap="5" vgap="5">
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10" />
+  </padding>
+  <!--gridLinesVisible>true</gridLinesVisible-->
+
+  <Label text="Scale Sequence: "
+         GridPane.rowIndex="0" GridPane.columnIndex="0" />
+  <TextField text="2" fx:id="scalesequence1"
+             GridPane.rowIndex="0" GridPane.columnIndex="1"
+             maxWidth="25" maxHeight="25" />
+  <TextField text="2" fx:id="scalesequence2"
+             GridPane.rowIndex="0" GridPane.columnIndex="2"
+             maxWidth="25" maxHeight="25" />
+  <TextField text="1" fx:id="scalesequence3"
+             GridPane.rowIndex="0" GridPane.columnIndex="3"
+             maxWidth="25" maxHeight="25" />
+  <TextField text="2" fx:id="scalesequence4"
+             GridPane.rowIndex="0" GridPane.columnIndex="4"
+             maxWidth="25" maxHeight="25" />
+  <TextField text="2" fx:id="scalesequence5"
+             GridPane.rowIndex="0" GridPane.columnIndex="5"
+             maxWidth="25" maxHeight="25" />
+  <TextField text="2" fx:id="scalesequence6"
+             GridPane.rowIndex="0" GridPane.columnIndex="6"
+             maxWidth="25" maxHeight="25" />
+
+  <HBox GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="7"
+        alignment="CENTER_RIGHT" >
+    <Button text="Calculate Frequencies"
+            onAction="#handleCalcFreqButtonAction" />
+  </HBox>
+
+  <Label text="First Note: "
+         GridPane.rowIndex="2" GridPane.columnIndex="0" />
+  <ComboBox fx:id="frequencycombobox"
+            GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="6" >
+    <items>
+      <!--ObservableListBase fx:id="frequencylist" /-->
+    </items>
+  </ComboBox>
+</GridPane>
+

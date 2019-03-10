@@ -1,0 +1,12 @@
+admin
+Admin
+ADMIN
+test
+Test
+TEST
+root
+Root
+ROOT
+administrator
+Administrator
+ADMINISTRATOR

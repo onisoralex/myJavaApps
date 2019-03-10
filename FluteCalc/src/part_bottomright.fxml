@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<GridPane  fx:controller="FluteCalc.FXMLController"
+           xmlns:fx="http://javafx.com/fxml"
+           hgap="5" vgap="5" >
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10" />
+  </padding>
+  <gridLinesVisible>true</gridLinesVisible>
+
+  <HBox GridPane.rowIndex="0"  GridPane.columnIndex="0" >
+    <Label text="Avg. Cutoff: " />
+    <TextField fx:id="averagecutoff" />
+  </HBox>
+  <HBox GridPane.rowIndex="0"  GridPane.columnIndex="1" >
+    <Label text="No Iterations: " />
+    <TextField fx:id="numberofiterations" />
+  </HBox>
+
+  <Label text="Graph -- Cutoff Frequency vs Frequency"
+         GridPane.rowIndex="1"  GridPane.columnIndex="0" GridPane.columnSpan="2" />
+  <!--ImagePane-->
+</GridPane>
+

@@ -1,0 +1,71 @@
+/* this().is().not().how().you().access().methods();
+         this.is.how.you.access.methods();
+         thisIsHowYouAccessA.CONSTRUCTOR;
+         */
+        /*// liest den "Working Direcory" des Programms aus
+         // System.out.println(new java.io.File("").getAbsolutePath());
+         // System.out.println(Core.class.getClassLoader().getResource("").getPath());
+         */
+        /*
+         FileReader fr = new FileReader("/path/to/file.txt");
+         BufferedReader br = new BufferedReader(fr);
+         */
+        /*   do-while-break demo (do-while kann man auch mit "while(...){...}" ersetzen)
+         int i = 0, j = 0;
+         boolean br = false;
+         do {
+         System.out.println("i1: " + i);
+         i++;
+         System.out.println("i2: " + i);
+         do {
+         System.out.println("j1: " + j);
+         j++;
+         System.out.println("j2: " + j);
+         if (i == 3) {
+         br = true;
+         break;
+         }
+         } while (j < 5);
+         if (br == true) {
+         break;
+         }
+         } while (i < 5);
+         System.out.println("i: " + i + " j: " + j);
+         */
+        /*   args-test    |
+         args[0] = "Hello";   |
+         args[1] = "World";   |
+         args[2] = "!";       |
+         */ //             \ /
+        //                  V
+        /*   Uebergabe von werten an "args" von einer class. Funktioniert nicht mit eingaben wie bei args-test
+         String[] ar = new String[4];
+         ar[0] = "Gustav";
+         ar[1] = "Gans";
+         ar[2] = "Mickey";
+         ar[3] = "Mouse";
+
+         asciishop.A01.main(ar);
+         */
+        // ======================================================================
+        // ArrayList test: not working
+        // java.lang.ClassCastException: [Java.lang.Object; an not be cast to [Java.lang.String;
+        /*
+         Scanner sc = new Scanner(System.in);
+         String[] stringarray;
+         ArrayList<String> arraylist = new ArrayList<String>();
+
+         while (sc.hasNext() == true) {
+         arraylist.add(sc.next());
+         if (arraylist.contains("bla") == true) {
+         break;
+         }
+         }
+
+         stringarray = new String[arraylist.size() - 1];
+         stringarray = (String[]) arraylist.toArray();   <-----------------------------------
+
+         for (int i = 0; i < stringarray.length; i++) {
+         System.out.println(stringarray[i]);
+         }
+         */

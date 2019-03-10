@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<BorderPane fx:controller="FluteCalc.FXMLMenuController"
+            xmlns:fx="http://javafx.com/fxml" >
+  <top>
+    <MenuBar useSystemMenuBar="true" >
+      <menus>
+        <Menu text="File" >
+          <MenuItem text="Load"
+                    fx:id="load" />
+          <MenuItem text="Save"
+                    fx:id="save" />
+          <MenuItem text="Print"
+                    fx:id="print" />
+          <SeparatorMenuItem />
+          <MenuItem text="Quit"
+                    fx:id="quit" />
+        </Menu>
+
+        <Menu text="Special" >
+          <MenuItem text="Enter Custom Frequencies"
+                    fx:id="entercustomfreq" />
+        </Menu>
+
+        <Menu text="Utility" >
+          <MenuItem text="Round/Square Conversion"
+                    fx:id="rsconversion" />
+          <MenuItem text="Temperature Conversion"
+                    fx:id="tempconversion" />
+          <MenuItem text="Distance Conversion"
+                    fx:id="distanceconversion" />
+          <MenuItem text="Calculate Air Density"
+                    fx:id="airdensity" />
+        </Menu>
+
+        <Menu text="Scales/Models" >
+          <MenuItem text="Major Scale"
+                    fx:id="majorscale" />
+          <MenuItem text="Harmonic Minor"
+                    fx:id="harmonicminor" />
+          <MenuItem text="Natural Minor"
+                    fx:id="naturalminor" />
+          <MenuItem text="Melodic Minor"
+                    fx:id="melodicminor" />
+          <MenuItem text="Ahava Raba"
+                    fx:id="ahavaraba" />
+          <MenuItem text="6 Hole Native Am."
+                    fx:id="nativeam" />
+        </Menu>
+
+        <Menu text="Help" >
+          <MenuItem text="Help"
+                    fx:id="help"/>
+          <MenuItem text="Fractional Drill Sizes"
+                    fx:id="drillsizes"/>
+          <MenuItem text="Tubing Sizes"
+                    fx:id="tubingsizes"/>
+        </Menu>
+
+        <Menu text="Setup    "
+              fx:id="setup"/>
+
+        <Menu text="Prev"
+              fx:id="prev"/>
+
+        <Menu text="Next"
+              fx:id="next"/>
+      </menus>
+    </MenuBar>
+  </top>
+
+  <center>
+    <GridPane alignment="TOP_CENTER" >
+      <HBox GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2"
+            alignment="CENTER_LEFT">
+        <fx:include source="part_topleft.fxml"
+                    GridPane.rowIndex="0" GridPane.columnIndex="0"
+                    alignment="TOP_LEFT" />
+
+        <fx:include source="part_topright.fxml"
+                    GridPane.rowIndex="0" GridPane.columnIndex="1"
+                    alignment="TOP_RIGHT" />
+      </HBox>
+      <HBox GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="2"
+            alignment="CENTER_LEFT">
+        <fx:include source="part_centerleft.fxml"
+                    GridPane.rowIndex="1" GridPane.columnIndex="0"
+                    alignment="TOP_LEFT" />
+
+        <fx:include source="part_centerright.fxml"
+                    GridPane.rowIndex="1" GridPane.columnIndex="1"
+                    alignment="TOP_RIGHT" />
+      </HBox>
+      <HBox GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2"
+            alignment="CENTER_LEFT">
+        <fx:include source="part_bottomleft.fxml"
+                    GridPane.rowIndex="2" GridPane.columnIndex="0"
+                    alignment="TOP_LEFT"/>
+
+        <fx:include source="part_bottomright.fxml"
+                    GridPane.rowIndex="2" GridPane.columnIndex="1"
+                    alignment="TOP_RIGHT" />
+      </HBox>
+    </GridPane>
+  </center>
+</BorderPane>

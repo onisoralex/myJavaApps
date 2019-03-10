@@ -3,7 +3,7 @@ package geometric;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import def.*;
+import definitions.*;
 
 public class AreaVolumeCalculations extends ConstantsDefinitions {
 

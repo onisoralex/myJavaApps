@@ -3,8 +3,7 @@ package maths;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import def.ConstantsDefinitions;
-import def.*;
+import definitions.*;
 //import com.wolfram.jlink.*;
 import myapps.Basics;
 

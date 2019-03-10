@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<GridPane  fx:controller="FluteCalc.FXMLController"
+           xmlns:fx="http://javafx.com/fxml"
+           hgap="5" vgap="5" >
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10" />
+  </padding>
+  <!--gridLinesVisible>true</gridLinesVisible-->
+
+  <Label text="Results"
+         GridPane.rowIndex="0" GridPane.columnIndex="0" />
+  <Label text="Frequency"
+         GridPane.rowIndex="0" GridPane.columnIndex="2" />
+  <Label text="Hole Pos."
+         GridPane.rowIndex="0" GridPane.columnIndex="3" />
+  <Label text="Space between Centers"
+         GridPane.rowIndex="0" GridPane.columnIndex="4"
+         maxWidth="50" />
+
+  <Label text="Top Hole"
+         GridPane.rowIndex="1" GridPane.columnIndex="0" />
+  <Label text="Botom Hole"
+         GridPane.rowIndex="6" GridPane.columnIndex="0" />
+
+  <Label text="6"
+         GridPane.rowIndex="1" GridPane.columnIndex="1" />
+  <TextField fx:id="freq6"
+             GridPane.rowIndex="1" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="dia6"
+             GridPane.rowIndex="1" GridPane.columnIndex="3"
+             maxWidth="50" maxHeight="50" />
+  <Label text="5"
+         GridPane.rowIndex="2" GridPane.columnIndex="1" />
+  <TextField fx:id="freq5"
+             GridPane.rowIndex="2" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="dia5"
+             GridPane.rowIndex="2" GridPane.columnIndex="3"
+             maxWidth="50" maxHeight="50" />
+  <Label text="4"
+         GridPane.rowIndex="3" GridPane.columnIndex="1" />
+  <TextField fx:id="freq4"
+             GridPane.rowIndex="3" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="dia4"
+             GridPane.rowIndex="3" GridPane.columnIndex="3"
+             maxWidth="50" maxHeight="50" />
+  <Label text="3"
+         GridPane.rowIndex="4" GridPane.columnIndex="1" />
+  <TextField fx:id="freq3"
+             GridPane.rowIndex="4" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="dia3"
+             GridPane.rowIndex="4" GridPane.columnIndex="3"
+             maxWidth="50" maxHeight="50" />
+  <Label text="2"
+         GridPane.rowIndex="5" GridPane.columnIndex="1" />
+  <TextField fx:id="freq2"
+             GridPane.rowIndex="5" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="dia2"
+             GridPane.rowIndex="5" GridPane.columnIndex="3"
+             maxWidth="50" maxHeight="50" />
+  <Label text="1"
+         GridPane.rowIndex="6" GridPane.columnIndex="1" />
+  <TextField fx:id="freq1"
+             GridPane.rowIndex="6" GridPane.columnIndex="2"
+             maxWidth="50" maxHeight="50" />
+  <TextField fx:id="dia1"
+             GridPane.rowIndex="6" GridPane.columnIndex="3"
+             maxWidth="50" maxHeight="50" />
+
+  <HBox GridPane.rowIndex="1" GridPane.columnIndex="4" GridPane.rowSpan="6"
+        alignment="CENTER"
+        maxWidth="50" >
+    <GridPane hgap="10" vgap="10"
+              alignment="CENTER">
+      <TextField fx:id="spacebetweencenters56"
+                 GridPane.rowIndex="0" GridPane.columnIndex="0"
+                 maxWidth="50" maxHeight="50" />
+      <TextField fx:id="spacebetweencenters45"
+                 GridPane.rowIndex="1" GridPane.columnIndex="0"
+                 maxWidth="50" maxHeight="50" />
+      <TextField GridPane.rowIndex="2" GridPane.columnIndex="0"
+                 visible="false" />
+      <TextField fx:id="spacebetweencenters23"
+                 GridPane.rowIndex="3" GridPane.columnIndex="0"
+                 maxWidth="50" maxHeight="50" />
+      <TextField fx:id="spacebetweencenters12"
+                 GridPane.rowIndex="4" GridPane.columnIndex="0"
+                 maxWidth="50" maxHeight="50" />
+    </GridPane>
+  </HBox>
+
+  <HBox GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="4"
+        alignment="CENTER_LEFT" >
+    <Label text="Length/Bore Ratio: " />
+    <TextField fx:id="lengthtoboreratio"
+               maxWidth="50" maxHeight="50" />
+  </HBox>
+  <HBox GridPane.rowIndex="7" GridPane.columnIndex="4"
+        alignment="CENTER_LEFT" >
+    <Label text="Emb Area: " />
+    <TextField fx:id="embarea"
+               maxWidth="50" maxHeight="50" />
+    <Label text="mm" />
+  </HBox>
+  <HBox GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.columnSpan="4"
+        alignment="CENTER_LEFT" >
+    <Label text="Cork to End Length: " />
+    <TextField fx:id="corctoendlength"
+               maxWidth="50" maxHeight="50" />
+    <Label text="mm" />
+  </HBox>
+</GridPane>
+
