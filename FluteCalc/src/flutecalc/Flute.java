@@ -31,15 +31,15 @@ public class Flute extends ConstantsDefinitions {
     public BigDecimal emb_hole_a = negone; //mm, area of Emb. Hole
     public BigDecimal emb_hole_chimney = negone; //mm, height
     public BigDecimal emb_hole_undercut = negone; //degree, front and back undercut
-    private BigDecimal emb_hole_correction = negone; //mm, ???
-    private BigDecimal emb_hole_position = negone; //mm, center of hole from cork
+    // private BigDecimal emb_hole_correction = negone; //mm, ???
+    // private BigDecimal emb_hole_position = negone; //mm, center of hole from cork
     public int emb_hole_type = -1; //elyptical = 0, rounded rectangular = 1
     private BigDecimal[] negone_aray = new BigDecimal[]{negone, negone, negone, negone, negone, negone};
     public BigDecimal[] tone_hole_position = negone_aray; //mm, position of every tonehole from foot
     public BigDecimal[] tone_hole_diameter = negone_aray; //mm, diameter of every tonehole
     public BigDecimal[] tone_hole_chimney = negone_aray; //mm, chimney height of every tonehole
     public BigDecimal[] tone_hole_undercut = negone_aray; //degree, undercut of toneholes if needed
-    private BigDecimal[] tone_hole_correction = negone_aray; //mm, ???
+    // private BigDecimal[] tone_hole_correction = negone_aray; //mm, ???
 //</editor-fold>
 
     public Flute(String name) {

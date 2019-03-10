@@ -6,16 +6,18 @@
 package flutecalc;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 import static maths.Calculations.sqrt;
-import static fileandtextstuff.TextOperations.actualReadFileMethod;
 import static geometrics.AreaVolumeCalculations.*;
+/*
+import static fileandtextstuff.TextOperations.actualReadFileMethod;
+import static others.Basics.regexTheString;
 import physics.Wave;
 import java.io.IOException;
-import java.math.RoundingMode;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import static others.Basics.regexTheString;
+*/
 
 /**
  *
@@ -155,7 +157,7 @@ public class FluteCalc {
         f.flute_base_tone = sc.nextLine();
     }
 
-    private static BigDecimal getFluteFrequency(Flute f) {
+    /* private static BigDecimal getFluteFrequency(Flute f) {
         //Read from the frequency table and save the entry;
         String[] freq;
         String[] split;
@@ -190,15 +192,15 @@ public class FluteCalc {
         }
 
         return frequency;
-    }
+    } */
 
-    private static BigDecimal getFluteLength(Flute f) {
+    /* private static BigDecimal getFluteLength(Flute f) {
         // LAMBDA / 2
         BigDecimal length = Wave.lambdaHalf(getFluteFrequency(f), const_sonic);
         System.out.print("Flute Length = " + length);
 
         return length;
-    }
+    } */
 
     private static void setWallThickness(Flute f) {
         System.out.print("Wall Thickness (actual: " + f.wall_thickness + "): ");
@@ -230,9 +232,9 @@ public class FluteCalc {
          */
     }
 
-    private static BigDecimal getLengthToBoreRatio(Flute f) {
+    /* private static BigDecimal getLengthToBoreRatio(Flute f) {
         return getFluteLength(f).divide(f.bore_diameter_head, const_calc_prec, RoundingMode.HALF_UP);
-    }
+    } */
 
     private static void setEmbouchureHole(Flute f) {
         int valid_info_counter = 0;

@@ -46,7 +46,7 @@ public class FXMLController {
     @FXML
     private TextField scalesequence6;
     @FXML
-    private ComboBox frequencycombobox;
+    private ComboBox<?> frequencycombobox;
 
 //Button Actions
     @FXML

@@ -18,7 +18,7 @@ public class BigBrother {
         //Delete unnecessary Lines and save into an new Array
         String[] config_line = extractConfigOptions(config_file);
         //Create a HashMap with the Nname of the Variable as ID and the Option as Content
-        HashMap h = makeHashMap(config_line);
+        HashMap<String, String> h = makeHashMap(config_line);
 
         //rtsp://192.168.0.90:554/mpeg4/media.amp
         // "C:\\Program Files (x86)\\VideoLAN\\VLC\\vlc.exe"  --sout=\"#duplicate{dst=std{access=file,mux=asf,dst='outputflder.format'},dst=nodisplay}" --run-time=
@@ -85,8 +85,9 @@ public class BigBrother {
                 Runtime.getRuntime().exec(str);
             }
 
-            int sleeptimer;
             /*
+            int sleeptimer;
+            
             //Set sleeptimer for the first Run else set the normal Time
             if (first_time) {
                 sleeptimer = firsttime_time_plus * 1000;
@@ -155,8 +156,8 @@ public class BigBrother {
         return config_line;
     }
 
-    public static HashMap makeHashMap(String[] config_line) {
-        HashMap hash = new HashMap();
+    public static HashMap<String, String> makeHashMap(String[] config_line) {
+        HashMap<String, String> hash = new HashMap<String, String>();
         //Helpvariable for storing both sides of the configs
         String[] help;
 

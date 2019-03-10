@@ -47,7 +47,7 @@ public class PointObject extends Calculations {
 
     public String getCoordinatesAsString() {
         String ret = null;
-        BigDecimal[] c = new BigDecimal[3];
+        // BigDecimal[] c = new BigDecimal[3];
 
         if (type == 'c') {
             ret = "( x = " + coordinates[0].toPlainString() + " / y = " + coordinates[1].toPlainString() + " / z = " + coordinates[2].toPlainString() + " )";
