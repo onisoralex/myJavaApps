@@ -3,9 +3,9 @@ package maths;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import definitions.*;
+import definitions.ConstantsDefinitions;
 //import com.wolfram.jlink.*;
-import myapps.Basics;
+import others.Basics;
 
 /**
  *

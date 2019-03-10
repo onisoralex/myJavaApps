@@ -1,6 +1,6 @@
-package inout.demos;
+package demos;
 
-import inout.demos.BlankArea;
+import demos.BlankArea;
 import java.awt.GridLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -11,7 +11,12 @@ import javax.swing.*;
  
 public class MouseEventDemo extends JPanel
         implements MouseListener {
-    BlankArea blankArea;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	BlankArea blankArea;
     JTextArea textArea;
     static final String NEWLINE = System.getProperty("line.separator");
      

@@ -1,12 +1,17 @@
-package inout.demos;
+package demos;
 
 import javax.swing.*;
 import java.awt.Dimension;
 import java.awt.Color;
-import java.awt.Graphics;
+// import java.awt.Graphics;
  
 public class BlankArea extends JLabel {
-    Dimension minSize = new Dimension(100, 50);
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	Dimension minSize = new Dimension(100, 50);
  
     public BlankArea(Color color) {
         setBackground(color);
