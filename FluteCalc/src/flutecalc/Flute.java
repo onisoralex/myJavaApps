@@ -6,7 +6,7 @@
 package flutecalc;
 
 import java.math.BigDecimal;
-import calc.src.definition.*;
+import others.ConstantsDefinitions;
 
 /**
  * This is the calculating class of the Flute Calculator

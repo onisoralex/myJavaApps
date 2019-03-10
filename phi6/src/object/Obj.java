@@ -1,6 +1,6 @@
 package object;
 
-import static calc.ConstantsDefinitions.*;
+import static others.ConstantsDefinitions.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 

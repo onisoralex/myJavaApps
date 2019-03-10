@@ -137,7 +137,7 @@ public class Basics {
      */
     public static String bigIntToBin(BigInteger n) {
         String ret = "";
-        BigInteger two = calc.ConstantsDefinitions.two.toBigInteger();
+        BigInteger two = ConstantsDefinitions.two.toBigInteger();
 
         while (n.compareTo(two) >= 0) {
             ret = n.remainder(two).toString() + ret;
@@ -175,8 +175,8 @@ public class Basics {
      */
     public static BigInteger binToBigInt(String bin) {
         BigInteger ret = new BigInteger("0");
-        BigInteger one = calc.ConstantsDefinitions.one.toBigInteger();
-        BigInteger two = calc.ConstantsDefinitions.two.toBigInteger();
+        BigInteger one = ConstantsDefinitions.one.toBigInteger();
+        BigInteger two = ConstantsDefinitions.two.toBigInteger();
         boolean binary = Basics.checkIfBinary(bin);
 
         if (binary == true) {

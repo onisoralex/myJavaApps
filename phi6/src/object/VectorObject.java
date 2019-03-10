@@ -2,8 +2,9 @@ package object;
 
     //ALWAYS WORK IN 3D!!!
 import java.math.BigDecimal;
+import maths.Calculations;
 
-public class VectorObject extends calc.Calculations {
+public class VectorObject extends Calculations {
     /*
      //Coordinate-Type & Origin Type +++++++++++++(Dimension and Type: c = cartesic, s = spherical, z = cylindrical)
      char ot = ' ';

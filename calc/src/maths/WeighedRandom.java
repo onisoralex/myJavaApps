@@ -5,7 +5,7 @@ package maths;
 
 import java.util.Arrays;
 import java.util.Random;
-import static myapps.Basics.addSpacesFront;
+import static others.Basics.addSpacesFront;
 
 public class WeighedRandom {
 

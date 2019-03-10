@@ -1,10 +1,12 @@
 package physics;
 
+import others.ConstantsDefinitions;
+
 public class Mechanics {
 
 //Abfrage auf "schneller oder gleich wie c"
     public static boolean biggerOrEqualToC(double v) {
-        boolean over9000 = v >= calc.ConstantsDefinitions.const_c.doubleValue();
+        boolean over9000 = v >= ConstantsDefinitions.const_c.doubleValue();
         return over9000;
     }
 

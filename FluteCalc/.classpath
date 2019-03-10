@@ -8,6 +8,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/calc"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/inout"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/myapps"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/basics"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/phi6"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

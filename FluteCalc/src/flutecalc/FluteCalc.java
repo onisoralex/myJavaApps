@@ -7,16 +7,15 @@ package flutecalc;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
-
 import static maths.Calculations.sqrt;
 import static fileandtextstuff.TextOperations.actualReadFileMethod;
 import static geometrics.AreaVolumeCalculations.*;
-
+import physics.Wave;
 import java.io.IOException;
 import java.math.RoundingMode;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import static myapps.Basics.regexTheString;
+import static others.Basics.regexTheString;
 
 /**
  *
@@ -30,7 +29,7 @@ public class FluteCalc {
 
     public static void main(String[] args) {
 
-        FXML.main(args);
+        gui.FXML.main(args);
 
         if (gui_deactivated) {
             System.out.println("-> If a Value should be ommited enter \"-1\"! \n");
@@ -195,7 +194,7 @@ public class FluteCalc {
 
     private static BigDecimal getFluteLength(Flute f) {
         // LAMBDA / 2
-        BigDecimal length = phi6.Wave.lambdaHalf(getFluteFrequency(f), const_sonic);
+        BigDecimal length = Wave.lambdaHalf(getFluteFrequency(f), const_sonic);
         System.out.print("Flute Length = " + length);
 
         return length;
@@ -301,7 +300,7 @@ public class FluteCalc {
                     System.out.println("-> I will just set it to a ratio of 2:1 Length to Width! Deal with that!");
 
                     //Calculate the Length and Width by the Area to a ratio of 2:1
-                    f.emb_hole_w = calc.Calculations.sqrt(f.emb_hole_a.divide(two, const_calc_prec, RoundingMode.HALF_UP), const_calc_prec);
+                    f.emb_hole_w = maths.Calculations.sqrt(f.emb_hole_a.divide(two, const_calc_prec, RoundingMode.HALF_UP), const_calc_prec);
                     f.emb_hole_l = f.emb_hole_w.multiply(two);
 
                 } else if (valid_info_counter == 0) {

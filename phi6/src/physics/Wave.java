@@ -5,7 +5,8 @@
  */
 package physics;
 
-import static definitions.ConstantsDefinitions.*;
+import static others.ConstantsDefinitions.*;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 

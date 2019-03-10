@@ -3,7 +3,7 @@ package aisling;
 //import com.wolfram.jlink.MathLinkException;
 import java.awt.AWTException;
 import java.io.IOException;
-import definitions.*;
+import others.ConstantsDefinitions;
 
 /**
  * This is the Starting and Testing Class of my Projects

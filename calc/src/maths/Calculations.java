@@ -3,9 +3,9 @@ package maths;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import definitions.ConstantsDefinitions;
 //import com.wolfram.jlink.*;
 import others.Basics;
+import others.ConstantsDefinitions;
 
 /**
  *
@@ -73,7 +73,7 @@ public class Calculations extends ConstantsDefinitions {
      * @return BigDecimal
      */
     public static BigDecimal degreeToRadiant(BigDecimal degree, int precision) {
-        return degree.multiply(calc.ConstantsDefinitions.const_pi).divide(calc.ConstantsDefinitions.one80, precision, RoundingMode.HALF_UP);
+        return degree.multiply(const_pi).divide(one80, precision, RoundingMode.HALF_UP);
     }
 
     /**
@@ -95,7 +95,7 @@ public class Calculations extends ConstantsDefinitions {
      * @return BigDecimal
      */
     public static BigDecimal radiantToDegree(BigDecimal radiant, int precision) {
-        return radiant.multiply(calc.ConstantsDefinitions.one80).divide(calc.ConstantsDefinitions.const_pi, precision, RoundingMode.HALF_UP);
+        return radiant.multiply(one80).divide(const_pi, precision, RoundingMode.HALF_UP);
     }
 
     /**
@@ -174,7 +174,7 @@ public class Calculations extends ConstantsDefinitions {
     public static BigDecimal arcSin(BigDecimal param, int precision) {
 //Calculates ArcSine by Sine
         int scale = precision + 3;
-        int u;
+        // int u;
         BigDecimal result;
         BigDecimal result_old = null;
 
@@ -327,7 +327,7 @@ public class Calculations extends ConstantsDefinitions {
          */
 
         BigDecimal erg = zero;
-        int it = 0;
+        // int it = 0;
 
 //Caculation of first part by binary counting (Nubers before decimal Point)
         String bin = Basics.bigDecToBin(x);
@@ -539,7 +539,7 @@ public class Calculations extends ConstantsDefinitions {
 //Heron-Algorithm with precision range (epsilon)
 //<editor-fold defaultstate="collapsed" desc="sqrt & Methods">
         int scale = precision + 3;
-        BigDecimal epsilon = one.movePointLeft(scale);
+        // BigDecimal epsilon = one.movePointLeft(scale);
         BigDecimal a = one.setScale(scale);
         //Used to set the precision in the variable for the division
         area = area.setScale(scale, RoundingMode.HALF_EVEN);
@@ -609,13 +609,13 @@ public class Calculations extends ConstantsDefinitions {
 //Heron-Algorithm (Variant)
         //<editor-fold defaultstate="collapsed" desc="qbrt & Methods">
         int scale = precision + 3;
-        BigDecimal epsilon = one.movePointLeft(scale);
+        // BigDecimal epsilon = one.movePointLeft(scale);
         BigDecimal a = one;
         BigDecimal b = one;
         BigDecimal sum;
         BigDecimal ret;
         boolean neg = false;
-        int it = 0;
+        // int it = 0;
 
         //Always make the numbers positive, so te calculations are symetric
         if (volume.compareTo(zero) < 0) {
@@ -712,7 +712,7 @@ public class Calculations extends ConstantsDefinitions {
         BigDecimal old;
         boolean neg_x = false;
         boolean neg_n = false;
-        int it = 0;
+        // int it = 0;
 
         //Always make the numbers positive, so te calculations are symetric
         if (x.compareTo(zero) < 0) {

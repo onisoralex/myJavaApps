@@ -1,6 +1,6 @@
 package object;
 
-import calc.Calculations;
+import maths.Calculations;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
@@ -8,7 +8,7 @@ import java.math.RoundingMode;
  *
  * @author Alex
  */
-public class PointObject extends calc.Calculations {
+public class PointObject extends Calculations {
     /*Uses Calculation Class*/
     /*Coordinates are ALWAYS relative to the origin position of the vector!!!*/
     /*Linear Coordinates work acording to the right hand rule and are positive in that directions
@@ -109,9 +109,9 @@ public class PointObject extends calc.Calculations {
         BigDecimal ret = zero;
 
         if (this.type == 'c') {//If coordinates system is Cartesic, use the coordinates
-            ret = calc.Calculations.sqrt(this.coordinates[0].pow(2).add(this.coordinates[1].pow(2)), const_calc_prec);
+            ret = sqrt(this.coordinates[0].pow(2).add(this.coordinates[1].pow(2)), const_calc_prec);
             if (coordinates[2].compareTo(zero) != 0) {
-                ret = calc.Calculations.sqrt(ret.pow(2).add(coordinates[2].pow(2)), const_calc_prec);
+                ret = sqrt(ret.pow(2).add(coordinates[2].pow(2)), const_calc_prec);
             }
         } else if (this.type == 'z') {//If coordinates system is Cylindric, use the r. Also h for 3D.
             ret = coordinates[0];
